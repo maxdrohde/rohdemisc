@@ -1,23 +1,18 @@
-theme_rohde <- function(){
-
-  return(1)
-}
-
-adder <- function(a,b){
-
-  #' Add two functions
+theme_rohde <- function(font_size = 12, font_family = "Lato"){
+  #' Personal plotting function
   #'
-  #' add together these two numbers
+  #' @param font_size
+  #' @param font_family
   #'
-  #' @param a number
-  #' @param b number
-  #'
-  #' @return number
+  #' @return ggplot2 plot
   #' @export
+  #'
   #' @examples
-  #' adder(2,7)
 
-  a+b
+  cowplot::theme_cowplot(font_size = font_size,
+                         font_family = font_family) %+replace%
+    theme(strip.background = element_rect(fill = "transparent", colour = NA),
+          strip.text = element_text(face="bold", margin = margin(1,0,1,0, "lines")),
+          panel.background = element_rect(fill = "white"))
+
 }
-
-
