@@ -7,12 +7,9 @@
 describe_note(data, label = "Expand for an overview of data values")
 }
 \arguments{
-\item{data}{A data frame as input to \code{describe()}.}
+\item{data}{A data frame as input to \code{Hmisc::describe()}.}
 
 \item{label}{A label for the note heading}
-}
-\value{
-None
 }
 \description{
 Note: You must set \verb{#| output = asis} within the Quarto block
