@@ -2,7 +2,7 @@
 % Please edit documentation in R/describe_note.R
 \name{describe_note}
 \alias{describe_note}
-\title{Return \code{Hmisc::describe} in a Quarto callout note}
+\title{\code{Hmisc::describe} output in a Quarto callout note}
 \usage{
 describe_note(data, label = "Expand for an overview of data values")
 }

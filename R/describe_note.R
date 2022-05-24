@@ -1,4 +1,4 @@
-#' Return `Hmisc::describe` in a Quarto callout note
+#' `Hmisc::describe` output in a Quarto callout note
 #'
 #'
 #' Note: You must set `#| output = asis` within the Quarto block
@@ -11,7 +11,7 @@
 #' describe_note(mtcars)
 #' describe_note(mtcars, label = "Data values in the `mtcars` dataset")
 describe_note <- function(data,
-                          label = "Expand for an overview of data values"){
+                          label = "Expand for an overview of data values") {
   cat(":::{.callout-note collapse='true'}\n")
   cat(paste("##", label))
   cat("\n")
